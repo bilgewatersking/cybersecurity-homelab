@@ -11,22 +11,23 @@ So without further ado, let's get started!
 ## List of Components used in this Lab
 | Tool | Objective     | Domain  |
 |-----|---------------|---|
-|Spare Laptop/Server |To host our virtual environment (VE). Will serve as a bare metal hypervisor (VE running directly on hardware)|Security Architecture|
-|Proxmox| Virtual Environment that will host all servers and VMs. Will also be used to create our networking interfaces|Security Architecture|
-|Kali Linux|Our primary Red teaming tool|Penetration Testing|
-|Ubuntu Server|Lightweight OS perfect for our use case|Security Architecture|
-|Atomic RedTeam|Library of attacks based on MITRE ATT&CK framework|Penetration Testing|
-|Wazuh|SIEM which will be the base of our SOC|SOC|
-|TheHive|For Incident Response (IR)|SOC|
-|Cortex|For threat/alert analysis and Active response|SOC|
-|Shuffle|SOAR platform. Syncs well with Hive, Cortex and Wazuh for automated response to threats|SOC|
-|Ansible|Our primary automation tool that will use custom playbooks built based on SIEM use cases for IR|DevSecOps|
-|Kubernetes|Will use K3s and Kubernetes GOAT later on. Will be used alongside Ansible and AWS later on in depth|DevSecOps|
-|DVWA, OWASP Juice Shop| Main victim machines. Intentionally vulnerable web apps we will hack into |Application Security|
-|Docker, Portainer|Docker to pull images and portainer to manage all our images|DevSecOps|
-|Jenkins|Our CI/CD server|Application Security|
-|DefectDojo|Centralized Application Security Vulnerability Management platform. All CI/CD security scans will send reports here|Application Security|
-|Snyk and Sonarqube|SAST scanning|Application Security|
+|Spare Laptop/Server |To host our virtual environment (VE). Will serve as a bare metal hypervisor (VE running directly on hardware)|Security Architecture   |
+|Proxmox| Virtual Environment that will host all servers and VMs. Will also be used to create our networking interfaces|Security Architecture   |
+|Kali Linux|Our primary Red teaming tool|Penetration Testing   |
+|Ubuntu Server|Lightweight OS perfect for our use case|Security Architecture   |
+|Atomic RedTeam|Library of attacks based on MITRE ATT&CK framework|Penetration Testing   |
+|Wazuh|SIEM which will be the base of our SOC|SOC   |
+|TheHive|For Incident Response (IR)|SOC   |
+|Cortex|For threat/alert analysis and Active response|SOC   |
+|Shuffle|SOAR platform. Syncs well with Hive, Cortex and Wazuh for automated response to threats|SOC   |
+|Ansible|Our primary automation tool that will use custom playbooks built based on SIEM use cases for IR|DevSecOps   |
+|Kubernetes|Will use K3s and Kubernetes GOAT later on. Will be used alongside Ansible and AWS later on in depth|DevSecOps   |
+|DVWA, OWASP Juice Shop| Main victim machines. Intentionally vulnerable web apps we will hack into |Application Security   |
+|Docker, Portainer|Docker to pull images and portainer to manage all our images|DevSecOps   |
+|Jenkins|Our CI/CD server|Application Security   |
+|DefectDojo|Centralized Application Security Vulnerability Management platform. All CI/CD security scans will send reports here|Application Security   |
+|Snyk and Sonarqube|SAST scanning|Application Security   |
 |OWASP ZAP|DAST Scanning|Application Security|
-|NGINX|Web server. Will use nginx ingress as load balancer once we deploy Kubernetes clusters.|Security Architecture|
+|NGINX|Web server. Will use nginx ingress as load balancer once we deploy Kubernetes clusters.|Security Architecture   |
+|Excel, Word|Reporting and documentation|Governance, Risk and Compliance   |
 |More to be added as we go deeper| - | - |
