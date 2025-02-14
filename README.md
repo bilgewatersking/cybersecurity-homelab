@@ -31,3 +31,17 @@ So without further ado, let's get started!
 |NGINX|Web server. Will use nginx ingress as load balancer once we deploy Kubernetes clusters.|Security Architecture   |
 |Excel, Word|Reporting and documentation|Governance, Risk and Compliance   |
 |More to be added as we go deeper| - | - |
+
+## Action Plan for this Lab. Detailed write ups for each domain will be in their respective folders.
+- [x] Have your pfsense, kali linux, and ubuntu server iso's downloaded beforehand.
+- [x] After downloading proxmox and rufus, flash proxmox onto a USB using rufus. Ensure you have an ethernet cable connected to your router on your spare laptop. Trust me this will save you hours of troubleshooting internet connectivity issues after installing proxmox.
+- [x] In BIOS settings, change to secure boot and change SATA operation from RAID to AHCI (you'll encouter an issue with raid when installing proxmox). Then set boot priority to proxmox usb
+- [x] Once Proxmox is installed, configure virtual networks and upload the ISO images to the VE.
+- [ ] Create PFsense vm.
+- [ ] Create Kali Linux vm.
+- [ ] Create Ubuntu vm to deploy Docker, Portainer, Jenkins, DVWA and OWASP Juice shop.
+- [ ] Create Ubuntu vm for SOC.
+### In the future, after Phase 1 is completed, we will enhance our PenTesting skills by adding Kubernetes, AWS and Mobile App hacking to our skill set. 
+- [ ] Create a kubernetes cluster and deploy 'kubernetes-goat'.
+- [ ] Deploy 'AWSGoat'. This will also teach us about IAC, specifically terraform.
+- [ ] Deploy Goatlin and use MobSF tool for android mobile app pentesting.
